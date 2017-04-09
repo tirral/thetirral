@@ -1,0 +1,2372 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: LibreFranklin-Black;
+  src: url(../fonts/LibreFranklin-Black.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-BlackItalic;
+  src: url(../fonts/LibreFranklin-BlackItalic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-Bold;
+  src: url(../fonts/LibreFranklin-Bold.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-BoldItalic;
+  src: url(../fonts/LibreFranklin-BoldItalic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-ExtraBold;
+  src: url(../fonts/LibreFranklin-ExtraBold.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-ExtraBoldItalic;
+  src: url(../fonts/LibreFranklin-ExtraBoldItalic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-ExtraLightItalic;
+  src: url(../fonts/LibreFranklin-ExtraLightItalic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-Italic;
+  src: url(../fonts/LibreFranklin-Italic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-Light;
+  src: url(../fonts/LibreFranklin-Light.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-LightItalic;
+  src: url(../fonts/LibreFranklin-LightItalic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-Medium;
+  src: url(../fonts/LibreFranklin-Medium.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-MediumItalic;
+  src: url(../fonts/LibreFranklin-MediumItalic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-Regular;
+  src: url(../fonts/LibreFranklin-Regular.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-SemiBold;
+  src: url(../fonts/LibreFranklin-SemiBold.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-SemiBoldItalic;
+  src: url(../fonts/LibreFranklin-SemiBoldItalic.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-Thin;
+  src: url(../fonts/LibreFranklin-Thin.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-ThinItalic;
+  src: url(../fonts/LibreFranklin-ThinItalic.ttf); }
+
+@font-face {
+  font-family: Lobster-Regular;
+  src: url(../fonts/Lobster-Regular.ttf); }
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 7, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 11, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 26, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 34, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 39, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* line 44, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/* line 48, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 53, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 57, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 62, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 66, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 71, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 76, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 80, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 88, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 92, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 96, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 100, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 104, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 108, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 113, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 117, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 125, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 135, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 139, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 144, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 152, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 157, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 163, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 167, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 173, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-outer-spin-button,
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-outer-spin-button,
+input[type="week"]::-webkit-inner-spin-button,
+input[type="week"]::-webkit-outer-spin-button,
+input[type="month"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 189, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 195, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 200, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 204, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 208, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 213, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: LibreFranklin-Regular;
+  line-height: 1.5; }
+
+/* line 11, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 15, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 23, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  font-family: LibreFranklin-Regular; }
+
+/* line 36, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+body {
+  background: #fff; }
+
+/* line 40, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+a {
+  color: #888888;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 47, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+a:hover,
+a:focus {
+  color: #443f3f;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 55, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 60, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+.img-left {
+  margin: 0 33px 0 0 !important;
+  float: left; }
+
+/* line 65, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+.img-right {
+  margin: 0 0 0 33px !important;
+  float: right; }
+
+/* line 70, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+strong {
+  font-weight: 600; }
+
+/* line 74, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+h1 {
+  font-size: 52px; }
+
+/* line 78, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+h2 {
+  font-size: 42px; }
+
+/* line 82, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+h3 {
+  font-size: 32px; }
+
+/* line 86, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+h4 {
+  font-size: 25px; }
+
+/* line 90, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+h5 {
+  font-size: 20px; }
+
+/* line 94, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+h6 {
+  font-size: 18px; }
+
+/* line 98, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0 24px;
+  clear: both; }
+
+/* line 110, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+blockquote,
+q {
+  quotes: "" ""; }
+  /* line 113, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
+    content: ""; }
+
+/* line 119, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+/* line 126, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+img {
+  height: auto;
+  max-width: 100%; }
+
+/* line 131, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/typography/_typography.scss */
+figure {
+  margin: 1em 0; }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 12px 34px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 19, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: transparent; }
+
+/* line 26, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+.nav-next,
+.nav-previous {
+  padding: 16px 0; }
+
+/* line 31, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+.nav-next a,
+.nav-previous a {
+  max-width: 95%;
+  overflow: hidden;
+  display: inline-block;
+  height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 25px;
+  text-overflow: ellipsis; }
+
+/* line 47, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+.btn-thetirral,
+a.btn-thetirral,
+.entry-content a.btn-thetirral,
+.nav-next a,
+.nav-previous a,
+.comment-respond input[type="submit"] {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  color: #888888;
+  padding: 8px 12px;
+  border-radius: 0;
+  border: 1px solid #888888 !important;
+  background-color: transparent; }
+  /* line 63, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+  .btn-thetirral:hover, .btn-thetirral:focus,
+  a.btn-thetirral:hover,
+  a.btn-thetirral:focus,
+  .entry-content a.btn-thetirral:hover,
+  .entry-content a.btn-thetirral:focus,
+  .nav-next a:hover,
+  .nav-next a:focus,
+  .nav-previous a:hover,
+  .nav-previous a:focus,
+  .comment-respond input[type="submit"]:hover,
+  .comment-respond input[type="submit"]:focus {
+    color: #ffffff !important;
+    border-color: #888888;
+    background-color: #888888; }
+
+@media (max-width: 700px) {
+  /* line 75, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+  .nav-next a,
+  .nav-previous a {
+    font-size: 12px; } }
+
+/* line 82, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+.nav-next a {
+  padding-right: 30px;
+  position: relative; }
+  /* line 85, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+  .nav-next a:hover:after {
+    color: #fff; }
+  /* line 88, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+  .nav-next a:after {
+    font-family: 'FontAwesome';
+    content: "\f054";
+    font-size: 14px;
+    color: #888888;
+    position: absolute;
+    top: 8px;
+    right: 12px; }
+    @media (max-width: 700px) {
+      /* line 88, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+      .nav-next a:after {
+        top: 5px; } }
+
+/* line 102, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+.nav-previous a {
+  padding-left: 30px;
+  position: relative; }
+  /* line 105, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+  .nav-previous a:hover:before {
+    color: #fff; }
+  /* line 108, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+  .nav-previous a:before {
+    font-family: 'FontAwesome';
+    content: "\f053";
+    font-size: 14px;
+    color: #888888;
+    position: absolute;
+    top: 8px;
+    left: 12px; }
+    @media (max-width: 700px) {
+      /* line 108, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_buttons.scss */
+      .nav-previous a:before {
+        top: 5px; } }
+
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_tables.scss */
+table {
+  width: 100%; }
+
+/* line 4, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_tables.scss */
+th, td {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center; }
+
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_lists.scss */
+ul, ol {
+  margin: 0 0 1.5em 3em; }
+
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_lists.scss */
+ul {
+  list-style: disc; }
+
+/* line 9, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_lists.scss */
+ol {
+  list-style: decimal; }
+
+/* line 13, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_lists.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+/* line 19, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_lists.scss */
+dt {
+  font-weight: bold; }
+
+/* line 23, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/elements/_lists.scss */
+dd {
+  margin: 0 1.5em 1.5em; }
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input:hover, input:focus, input:active, input:visited,
+select:hover,
+select:focus,
+select:active,
+select:visited,
+textarea:hover,
+textarea:focus,
+textarea:active,
+textarea:visited,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  outline: none; }
+
+/* line 14, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  color: #767676;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  height: 50px;
+  padding: 4px 20px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+/* line 42, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+/* line 61, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px 20px; }
+
+/* line 66, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input[type="checkbox"] {
+  display: inline; }
+
+/* line 69, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #a3a2a2; }
+
+/* line 75, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #c3c3c3; }
+
+/* line 79, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cacaca; }
+
+/* line 83, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+.orches-animation {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+/* line 88, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+.orches-animation.animated {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+@-webkit-keyframes pop-scale {
+  0% {
+    -webkit-transform: scale(0.7); }
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pop-scale {
+  0% {
+    -moz-transform: scale(0.7); }
+  100% {
+    -moz-transform: scale(1); } }
+
+@keyframes pop-scale {
+  0% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes pop-scale2 {
+  0% {
+    -webkit-transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pop-scale2 {
+  0% {
+    -moz-transform: scale(0.5); }
+  100% {
+    -moz-transform: scale(1); } }
+
+@keyframes pop-scale2 {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+/* bootstrap resetting elements */
+/* line 100, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+.btn {
+  background-image: none; }
+
+/* line 103, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+textarea,
+input[type="text"],
+input[type="submit"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input,
+.dropdown-menu,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  -webkit-appearance: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  font-size: 16px; }
+
+/* line 139, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input[type="search"]::-webkit-input-placeholder {
+  color: #767676;
+  font-weight: 300;
+  font-size: 14px; }
+
+/* line 145, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input[type="search"]::-moz-placeholder {
+  color: #767676;
+  font-weight: 300;
+  font-size: 14px; }
+
+/* line 151, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input[type="search"]:-ms-input-placeholder {
+  color: #767676;
+  font-weight: 300;
+  font-size: 14px; }
+
+/* line 156, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/forms/_fields.scss */
+input[type="search"]:-moz-placeholder {
+  color: #767676;
+  font-weight: 300;
+  font-size: 14px; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Navigation
+--------------------------------------------------------------*/
+/* line 6, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_navigation.scss */
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+
+/* line 12, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_navigation.scss */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+
+/* line 18, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_navigation.scss */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+/* line 25, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_navigation.scss */
+.posts-navigation .nav-previous {
+  padding-left: 15px; }
+
+/* line 28, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_navigation.scss */
+.posts-navigation .nav-next {
+  padding-right: 15px; }
+
+/* line 31, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_navigation.scss */
+.post-navigation {
+  margin: 30px 0; }
+
+/*--------------------------------------------------------------
+ Menus
+--------------------------------------------------------------*/
+/* navigation */
+/* line 8, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnavwrapper {
+  margin-left: 20px !important;
+  margin-right: 20px !important; }
+
+/* line 15, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnav {
+  display: block;
+  float: right;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  /* line 19, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  /* line 24, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav li {
+    float: left;
+    padding: 0 14px; }
+  /* line 29, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav ul ul li {
+    padding: 0; }
+  /* line 32, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav ul li a {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888888;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none; }
+    /* line 41, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav ul li a:hover {
+      color: #2095f2; }
+  /* line 45, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav ul ul a {
+    width: 180px;
+    padding: 6px; }
+  /* line 50, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav ul li {
+    position: relative; }
+    /* line 52, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav ul li ul {
+      width: 180px;
+      position: absolute;
+      top: 100%;
+      left: initial;
+      opacity: 0;
+      z-index: 10;
+      visibility: hidden;
+      background-color: #fff;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      /* line 66, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+      #mainnav ul li ul ul {
+        top: 0; }
+      /* line 69, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+      #mainnav ul li ul:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px; }
+      /* line 76, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+      #mainnav ul li ul ul:after {
+        top: 0; }
+      /* line 79, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+      #mainnav ul li ul li ul {
+        left: 100%; }
+  /* line 85, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav > ul > li:last-child {
+    padding-right: 0; }
+  /* line 88, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav li:hover > ul {
+    opacity: 1;
+    padding-top: 10px;
+    visibility: visible;
+    left: auto;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+    /* line 94, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav li:hover > ul ul {
+      padding-top: 0;
+      left: 100%; }
+  /* line 99, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav .sub-menu {
+    z-index: 99999; }
+    /* line 102, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav .sub-menu li a {
+      color: #888888;
+      display: block;
+      line-height: 30px;
+      background: #1c1c1c;
+      padding: 0 18px;
+      border-top: 1px solid #252525;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+    /* line 111, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav .sub-menu li:hover > a {
+      color: #000; }
+  /* line 116, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav li:hover > .sub-menu > li > a {
+    padding: 8px 18px; }
+  /* line 120, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav ul li::before {
+    font-family: Fontawesome;
+    color: #000;
+    float: left;
+    margin: 5px 5px 0 0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400; }
+  /* line 129, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav ul li a {
+    float: left; }
+  /* line 133, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav .sub-menu li:before {
+    content: '';
+    margin: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease; }
+  /* line 142, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav .page_item_has_children:after {
+    font-family: "FontAwesome";
+    content: "\f107";
+    font-size: 14px;
+    color: #888888;
+    position: absolute;
+    display: block;
+    top: -1px;
+    right: 1px;
+    font-style: normal; }
+  /* line 154, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav .page_item_has_children .page_item_has_children:after {
+    font-family: "FontAwesome";
+    content: "\f107";
+    font-size: 14px;
+    color: #888888;
+    position: absolute;
+    display: block;
+    top: 2px;
+    right: 6px;
+    font-style: normal; }
+
+/* line 171, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnav-mobi ul li a {
+  float: none; }
+
+/* line 174, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnav-mobi ul li::before {
+  content: ''; }
+
+/*--------------------------------------------------------------
+Mobile navigation
+--------------------------------------------------------------*/
+/* line 184, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnav-mobi {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  /* line 196, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav-mobi ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    /* line 201, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav-mobi ul li {
+      margin: 0;
+      position: relative;
+      text-align: left;
+      border-top: 1px solid #dadada;
+      cursor: pointer; }
+    /* line 208, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav-mobi ul > li > a {
+      display: block;
+      text-decoration: none;
+      padding: 10px 25px;
+      color: #888888; }
+    /* line 214, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav-mobi ul.sub-menu {
+      top: 100%;
+      left: 0;
+      z-index: 2000;
+      position: relative;
+      background-color: #888888; }
+      /* line 220, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+      #mainnav-mobi ul.sub-menu > li > a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 60px;
+        border-top-color: #888888;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
+      /* line 227, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+      #mainnav-mobi ul.sub-menu > li > a:hover {
+        color: #000; }
+  /* line 232, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav-mobi > ul > li > ul > li {
+    position: relative;
+    border-top: 1px solid #888888;
+    background-color: #222; }
+    /* line 238, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav-mobi > ul > li > ul > li > ul > li {
+      position: relative;
+      border-top: 1px solid #888888;
+      background-color: #222; }
+    /* line 243, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav-mobi > ul > li > ul > li > a {
+      padding-left: 70px !important; }
+    /* line 246, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    #mainnav-mobi > ul > li > ul > li > ul > li a {
+      padding-left: 90px !important; }
+  /* line 251, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav-mobi > ul > li > ul > li:first-child a {
+    border-top: none; }
+  /* line 254, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  #mainnav-mobi > ul > li > ul > li.active > a {
+    color: #fff; }
+
+/* line 261, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnav-mobi ul ul a {
+  padding: 10px 40px !important; }
+
+/* line 265, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnav-mobi ul ul ul a {
+  padding: 10px 60px !important; }
+
+/* line 269, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+#mainnav-mobi ul ul ul ul a {
+  padding: 10px 80px !important; }
+
+/* line 276, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+.btn-menu {
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: "FontAwesome";
+  color: #888888;
+  text-align: center;
+  width: 40px;
+  height: 52px;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  @media only screen and (max-width: 1024px) {
+    /* line 276, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+    .btn-menu {
+      display: block; } }
+  /* line 291, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  .btn-menu:before {
+    content: "\f0c9"; }
+
+/* line 296, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+.btn-submenu {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  width: 70px;
+  height: 44px; }
+  /* line 307, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  .btn-submenu:before {
+    content: "\f107";
+    color: #888888; }
+  /* line 311, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/navigation/_menus.scss */
+  .btn-submenu.active:before {
+    content: ""; }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/* line 2, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_accessibility.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  /* line 9, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_accessibility.scss */
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/* Do not show the outline on the skip link target. */
+/* line 30, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_accessibility.scss */
+#content[tabindex="-1"]:focus {
+  outline: 0; }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+/* line 7, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+/* line 13, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_alignments.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_clearings.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed; }
+
+/* line 16, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_clearings.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.sticky {
+  display: block; }
+
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.hentry {
+  margin: 0; }
+
+/* line 9, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.byline,
+.updated:not(.published) {
+  display: none; }
+
+/* line 14, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+/* line 19, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+/* line 25, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/*--------------------------------------------------------------
+Standard Post Format 
+--------------------------------------------------------------*/
+/* line 35, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+article {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+/* line 42, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+h1.entry-title {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0; }
+
+/* line 50, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.entry-thumb {
+  text-align: center;
+  margin-bottom: 30px; }
+
+/* line 55, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.entry-meta {
+  font-size: 13px;
+  font-weight: 200;
+  color: #898989;
+  margin-bottom: 20px; }
+  /* line 60, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .entry-meta a {
+    font-weight: 500;
+    color: #898989; }
+    /* line 63, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+    .entry-meta a:hover, .entry-meta a:focus {
+      color: #888888; }
+
+/* line 70, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.standard-featured-link {
+  display: block;
+  position: relative; }
+  /* line 76, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .standard-featured-link:hover .standard-featured:after, .standard-featured-link:focus .standard-featured:after {
+    background-color: transparent; }
+
+/* line 83, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.standard-featured {
+  height: 500px !important;
+  color: #ffffff; }
+  @media (max-width: 700px) {
+    /* line 83, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+    .standard-featured {
+      height: 240px !important; } }
+  /* line 89, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .standard-featured:after {
+    background-color: transparent; }
+
+/* line 94, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.background-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* line 100, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.standard-featured {
+  height: 330px;
+  display: block;
+  position: relative;
+  margin-bottom: 25px; }
+  /* line 105, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .standard-featured:after {
+    -webkit-transition: background-color 320ms ease;
+    -moz-transition: background-color 320ms ease;
+    -ms-transition: background-color 320ms ease;
+    -o-transition: background-color 320ms ease;
+    transition: background-color 320ms ease;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35); }
+
+/* line 120, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.entry-excerpt {
+  margin: 30px 0 16px; }
+  @media (max-width: 700px) {
+    /* line 120, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+    .entry-excerpt {
+      margin: 20px 0 16px; } }
+  /* line 125, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .entry-excerpt p {
+    font-size: 18px;
+    color: #888888;
+    line-height: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-bottom: 33px; }
+
+/* line 135, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.button-container {
+  margin-bottom: 30px; }
+
+/* line 139, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.entry-footer {
+  border-bottom: 2px solid #F1F1F1;
+  padding-top: 26px; }
+  @media (max-width: 700px) {
+    /* line 139, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+    .entry-footer {
+      padding-top: 0px; } }
+  /* line 145, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .entry-footer .post-footer-container {
+    padding: 10px 5px;
+    margin-bottom: 26px;
+    color: #898989;
+    text-transform: uppercase; }
+    @media (max-width: 700px) {
+      /* line 145, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+      .entry-footer .post-footer-container {
+        margin-bottom: 0px; } }
+  /* line 154, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .entry-footer a {
+    color: #898989;
+    font-size: 12px; }
+    /* line 157, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+    .entry-footer a:hover, .entry-footer a:focus {
+      color: #888888; }
+  /* line 163, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .entry-footer .tags-list .thetirral-icon {
+    margin-right: 10px; }
+  /* line 166, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .entry-footer .tags-list a {
+    padding: 0 4px; }
+  /* line 171, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .entry-footer .comments-link .thetirral-icon {
+    margin-left: 10px; }
+
+/* 
+	Footer Section
+	------------------------------------------------
+*/
+/* line 188, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.thetirral-footer {
+  background-color: #333;
+  padding: 20px 0;
+  margin-top: 40px;
+  display: block; }
+
+/* 
+	Comment section
+	------------------------------------------------
+*/
+/* line 201, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comments-area {
+  border-top: 4px solid #F1F1F1;
+  margin-top: 40px; }
+
+/* line 206, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.last-field {
+  margin-bottom: 50px; }
+
+/* line 210, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comment-list {
+  padding: 0;
+  list-style: none; }
+
+/* line 215, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comment-body {
+  padding-bottom: 0; }
+
+/* line 219, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comments-area .children {
+  background-color: #F5F5F5;
+  padding-right: 20px;
+  padding-left: 20px;
+  list-style: none;
+  margin-left: 60px; }
+  /* line 227, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .comments-area .children .comment-author:before {
+    background-color: #fff; }
+
+/* line 234, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comment-author {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 300; }
+  /* line 241, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .comment-author:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 2px;
+    bottom: 2px;
+    left: 40px;
+    right: 0;
+    background-color: #f5f5f5;
+    z-index: 1;
+    border-radius: 4px; }
+  /* line 254, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .comment-author * {
+    z-index: 1;
+    position: relative; }
+  /* line 259, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .comment-author b {
+    font-weight: 400; }
+  /* line 263, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .comment-author .avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 3px solid #fff; }
+
+/* line 271, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comment-metadata {
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 3px;
+  font-size: 12px; }
+  /* line 277, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  .comment-metadata a {
+    color: #999; }
+
+/* line 283, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comment-content {
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: 1px solid #E6E6E6;
+  margin-left: 60px; }
+
+/* line 291, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.reply {
+  text-align: right;
+  padding: 5px 0; }
+
+/* line 296, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+a.comment-reply-link {
+  text-transform: uppercase;
+  color: #404040; }
+  /* line 300, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+  a.comment-reply-link:hover, a.comment-reply-link:focus {
+    color: #404040; }
+
+/* line 306, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_posts-and-pages.scss */
+.comment-respond {
+  margin-top: 60px; }
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_comments.scss */
+.comment-content a {
+  word-wrap: break-word; }
+
+/* line 4, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_comments.scss */
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.header-wrap {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 116px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 16, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.show {
+  opacity: 1;
+  z-index: 999; }
+
+/* line 23, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.admin-bar .header-wrap.show {
+  top: 32px; }
+
+/* line 29, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+h1.site-title {
+  line-height: 26px; }
+  @media (max-width: 770px) {
+    /* line 29, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+    h1.site-title {
+      text-align: center; } }
+  /* line 34, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+  h1.site-title a {
+    text-align: left !important;
+    font-size: 22px;
+    line-height: 1.6; }
+
+/* line 41, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.site-description {
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.2;
+  word-spacing: 3px;
+  letter-spacing: 0px; }
+  @media (max-width: 770px) {
+    /* line 41, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+    .site-description {
+      text-align: center; } }
+
+/* line 52, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.site-logo {
+  max-height: 72px; }
+
+/* line 56, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.site-header {
+  margin: 0 !important;
+  background-color: white;
+  padding: 10px 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 63, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.site-header {
+  border-bottom: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important; }
+  /* line 67, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+  .site-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #cecece !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    @media screen and (max-width: 37.5em) {
+      /* line 67, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+      .site-header.fixed {
+        position: relative; } }
+  /* line 79, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+  .site-header .logo {
+    margin: 40px 0;
+    float: left;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    width: 135px;
+    height: 27px; }
+    /* line 83, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+    .site-header .logo a {
+      display: block;
+      height: 100%; }
+  /* line 90, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+  .site-header.float-header {
+    padding: 8px; }
+    /* line 92, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+    .site-header.float-header #mainnav {
+      padding: 0; }
+      /* line 94, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+      .site-header.float-header #mainnav > ul > li > a {
+        height: 70px;
+        line-height: 70px; }
+    /* line 99, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+    .site-header.float-header .logo {
+      margin: 20px 0; }
+
+/* line 105, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.admin-bar .site-header {
+  top: 32px; }
+  /* line 107, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+  .admin-bar .site-header.float-header {
+    top: 32px; }
+
+/* line 112, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.header-image {
+  display: none;
+  position: relative;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* line 121, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.header-inner {
+  display: none; }
+
+/* line 125, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.site-title {
+  margin: 0; }
+
+/* line 130, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.telephone-wrapper ul {
+  margin: 0; }
+  @media (max-width: 770px) {
+    /* line 130, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+    .telephone-wrapper ul {
+      padding: 0; } }
+  /* line 136, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+  .telephone-wrapper ul li {
+    display: inline-block;
+    float: right;
+    list-style: none;
+    margin: 12px 0;
+    padding-right: 16px;
+    line-height: 20px;
+    border-right: 1px solid #888888; }
+    @media (max-width: 770px) {
+      /* line 136, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+      .telephone-wrapper ul li {
+        border-right: none; } }
+    /* line 147, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+    .telephone-wrapper ul li:first-child {
+      border-right: none; }
+    @media (max-width: 770px) {
+      /* line 136, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+      .telephone-wrapper ul li {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center; } }
+
+/* line 158, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.telephone-wrapper span.icon {
+  color: #2095f2;
+  padding-right: 12px;
+  font-size: 8px; }
+
+/* line 163, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.telephone-wrapper span {
+  color: #888888;
+  font-size: 13px; }
+
+/* Text meant only for screen readers. */
+/* line 172, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+/* line 182, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+/* line 205, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_header.scss */
+.container-fluid .jumbotron {
+  padding: 0 !important; }
+
+/*--------------------------------------------------------------
+## Slider
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Slider
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_slider.scss */
+.carousel-caption {
+  top: -moz-calc(50% - 230px) !important;
+  top: calc(50% - 230px) !important;
+  top: -webkit-calc(50% - 230px) !important;
+  left: -moz-calc(50% - 230px) !important;
+  left: calc(50% - 230px) !important;
+  left: -webkit-calc(50% - 230px) !important;
+  padding-top: 200px;
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4); }
+  /* line 17, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_slider.scss */
+  .carousel-caption h3 {
+    font-family: 'Lobster-Regular', cursive !important;
+    color: #fff;
+    font-size: 42px;
+    line-height: 46px;
+    margin-bottom: 12px; }
+  /* line 24, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_slider.scss */
+  .carousel-caption p {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lobster-Regular', cursive !important;
+    text-transform: lowercase;
+    text-align: right;
+    padding-right: 50px; }
+
+/*--------------------------------------------------------------
+Jumbotron
+--------------------------------------------------------------*/
+/* line 41, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_slider.scss */
+.jumbotron {
+  border-radius: 0px !important; }
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Preloader
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_preloader.scss */
+#page-preloader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  cursor: default;
+  pointer-events: none;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #FFF;
+  z-index: 9999999; }
+
+/* line 7, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_preloader.scss */
+#page-preloader img {
+  position: absolute;
+  top: calc(50% - 48px);
+  left: calc(50% - 42px);
+  animation-name: rotationY;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@-ms-keyframes rotationY {
+  /* line 10, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_preloader.scss */
+  from {
+    transform: rotateY(0deg); }
+  /* line 11, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_preloader.scss */
+  to {
+    transform: rotateY(180deg); } }
+
+@-moz-keyframes rotationY {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(180deg); } }
+
+@-webkit-keyframes rotationY {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(180deg); } }
+
+@keyframes rotationY {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(180deg); } }
+
+/*--------------------------------------------------------------
+## Body
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Body
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_body.scss */
+.content-area {
+  padding: 40px 60px 80px 60px; }
+  @media (max-width: 770px) {
+    /* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_body.scss */
+    .content-area {
+      padding: 20px 15px 20px 15px; } }
+
+/* line 14, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_body.scss */
+.fp-content-area {
+  padding: 40px 20px 80px 20px; }
+
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Widgets
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+#secondary {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 30px;
+  background-color: #fff;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 15, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.secondary-fixed {
+  position: fixed;
+  top: 110px;
+  right: 0;
+  height: calc(100% - 120px);
+  height: -moz-calc(100% - 120px);
+  height: -webkit-calc(100% - 120px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+/* line 25, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.widget-area {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  /* line 28, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+  .widget-area .widget {
+    position: relative;
+    margin-bottom: 5px;
+    padding-top: 16px; }
+  /* line 33, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+  .widget-area h2 {
+    margin-bottom: 36px; }
+
+/* line 38, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.search-form {
+  width: 100%; }
+  /* line 40, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+  .search-form label {
+    width: 100%; }
+  /* line 43, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+  .search-form input {
+    width: 100%; }
+
+/* line 48, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.widget ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 14px; }
+  /* line 52, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+  .widget ul li {
+    padding: 6px 0; }
+    /* line 54, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+    .widget ul li a {
+      position: relative; }
+      /* line 56, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+      .widget ul li a:first-child:before {
+        font-family: FontAwesome;
+        content: "\f054";
+        font-size: 10px;
+        position: absolute;
+        top: 0px;
+        left: -12px; }
+      /* line 64, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+      .widget ul li a:hover {
+        color: black; }
+
+/* line 71, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.widget .children {
+  padding-left: 15px; }
+
+/* line 79, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.woocommerce input[type="submit"],
+.widget_search .search-submit {
+  display: none; }
+
+/* line 86, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+#woocommerce-product-search-field,
+.search-form input {
+  width: 96%; }
+
+/* line 93, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.textwidget {
+  font-family: LibreFranklin-Thin, sans-serif !important;
+  font-size: 16px !important;
+  color: #888888 !important;
+  line-height: 1.5em !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.02em !important;
+  margin-bottom: 33px !important; }
+
+/* line 104, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+.footer-widgets {
+  background-color: #f8f8f8; }
+  /* line 106, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_widgets.scss */
+  .footer-widgets h2 {
+    padding: 0; }
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_footer.scss */
+.site-footer {
+  height: 60px;
+  padding-top: 26px;
+  font-size: 12px;
+  text-align: center; }
+
+/* line 12, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_footer.scss */
+.go-top {
+  position: fixed !important;
+  right: 20px;
+  bottom: -45px;
+  color: #fff;
+  display: block;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  z-index: 9999;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 38, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_footer.scss */
+.go-top:hover {
+  background-color: transparent; }
+
+/* line 43, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_footer.scss */
+.go-top.show {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  visibility: visible;
+  bottom: 22px; }
+
+/* line 52, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_footer.scss */
+.footer-info {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/* line 65, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/site/_footer.scss */
+.footer-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 0;
+  padding: 0; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Shop 
+--------------------------------------------------------------*/
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.products li.product .button,
+.woocommerce div.product form.cart .button,
+.woocommerce .cart .button,
+.woocommerce .cart input.button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce input.button.alt,
+.woocommerce a.button,
+.woocommerce .widget_price_filter .price_slider_amount .button,
+.woocommerce #review_form #respond .form-submit input {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  color: #888888;
+  padding: 8px 12px;
+  border-radius: 0;
+  border: 1px solid #888888;
+  background-color: transparent; }
+  /* line 23, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+  .woocommerce ul.products li.product .button:hover,
+  .woocommerce div.product form.cart .button:hover,
+  .woocommerce .cart .button:hover,
+  .woocommerce .cart input.button:hover,
+  .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+  .woocommerce input.button.alt:hover,
+  .woocommerce a.button:hover,
+  .woocommerce .widget_price_filter .price_slider_amount .button:hover,
+  .woocommerce #review_form #respond .form-submit input:hover {
+    color: #ffffff;
+    border-color: #888888;
+    background-color: #888888; }
+
+@media (max-width: 700px) {
+  /* line 30, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+  .woocommerce ul.products li.product .button {
+    font-size: 10px; } }
+
+/* line 37, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.price_label {
+  color: #888888; }
+
+/* line 41, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.product_list_widget li a {
+  line-height: 24px; }
+
+/* line 46, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.cart_list li img,
+.woocommerce ul.product_list_widget li img {
+  width: 70px; }
+
+/* line 51, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.product_list_widget li .star-rating {
+  padding-bottom: 16px;
+  color: #888888; }
+
+/* line 56, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  background-color: #77a464; }
+
+/* line 61, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce .quantity .qty {
+  width: 9.631em;
+  text-align: center;
+  height: 33px; }
+
+/* line 67, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+  width: 9.631em;
+  text-align: center;
+  height: 33px; }
+
+/* line 75, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce .woocommerce-breadcrumb a {
+  font-size: 22px; }
+
+/* line 80, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.products li.product h3 {
+  font-size: 22px;
+  text-align: center; }
+
+/* line 85, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.products li.product .price del {
+  font-size: 16px;
+  text-align: center; }
+
+/* line 90, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.products li.product .price {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700; }
+
+/* line 96, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  font-size: 24px; }
+
+/* line 101, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  text-align: center; }
+
+/* line 106, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce span.onsale {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 14px;
+  width: 52px;
+  height: 52px; }
+
+/* line 113, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.products li.product .onsale {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 12px;
+  width: 42px;
+  height: 42px; }
+
+/* line 120, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  padding: 25px 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  /* line 124, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+  .woocommerce ul.products li.product:hover,
+  .woocommerce-page ul.products li.product:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/* line 129, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+#add_payment_method table.cart img,
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img {
+  width: 82px;
+  box-shadow: none; }
+
+/* line 136, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.cart-conteiner {
+  display: block;
+  width: 86px;
+  text-align: center; }
+  @media (max-width: 770px) {
+    /* line 136, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+    .cart-conteiner {
+      margin: 0 auto; } }
+  /* line 143, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+  .cart-conteiner .cart-contents:before {
+    font-family: WooCommerce;
+    content: "\e01d";
+    font-size: 20px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    padding-right: 5px;
+    vertical-align: bottom; }
+  /* line 153, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+  .cart-conteiner .cart-contents:hover {
+    text-decoration: none; }
+  /* line 156, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+  .cart-conteiner .cart-contents-count {
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px 6px;
+    line-height: 1;
+    font-size: 10px;
+    vertical-align: top; }
+
+/* line 168, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/shop/_shop.scss */
+.woocommerce th,
+.woocommerce td {
+  border: none;
+  padding: 5px;
+  text-align: center; }
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_infinite-scroll.scss */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/modules/_infinite-scroll.scss */
+.infinity-end.neverending .site-footer {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_media.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 11, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_captions.scss */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  /* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_captions.scss */
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 9, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_captions.scss */
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+/* line 14, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_captions.scss */
+.wp-caption-text {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+/* line 1, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+.gallery {
+  margin-bottom: 1.5em; }
+
+/* line 5, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  /* line 11, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  /* line 15, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  /* line 19, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  /* line 23, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  /* line 27, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  /* line 31, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  /* line 35, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  /* line 39, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+/* line 44, C:/OpenServer/domains/wordpress1/wp-content/themes/thetirral/sass/media/_galleries.scss */
+.gallery-caption {
+  display: block; }
+
+/*# sourceMappingURL=thetirral.css.map */

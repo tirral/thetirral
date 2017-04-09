@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+Widgets
+--------------------------------------------------------------*/
+
+#secondary {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 30px;
+    background-color: #fff;
+    z-index: 100;
+    @include main-transition;
+}
+
+.secondary-fixed {
+    position: fixed;
+    top: 110px;
+    right: 0;
+    height: calc(100% - 120px);
+    height: -moz-calc(100% - 120px);
+    height: -webkit-calc(100% - 120px);
+    @include shadow-3;
+}
+
+.widget-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .widget {
+        position: relative;
+        margin-bottom: 5px;
+        padding-top: 16px;
+    }
+    h2 {
+        margin-bottom: 36px;
+    }
+}
+
+.search-form {
+    width: 100%;
+    label {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 14px;
+    li {
+        padding: 6px 0;
+        a {
+            position: relative;
+            &:first-child:before {
+                font-family: FontAwesome;
+                content: "\f054";
+                font-size: 10px;
+                position: absolute;
+                top: 0px;
+                left: -12px;
+            }
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+.widget .children {
+    padding-left: 15px;
+}
+
+
+
+
+
+.woocommerce input[type="submit"],
+.widget_search .search-submit {
+    display: none;
+}
+
+
+
+#woocommerce-product-search-field,
+.search-form input {
+    width: 96%;
+}
+
+
+
+.textwidget {
+    font-family: LibreFranklin-Thin, sans-serif !important;
+    ;
+    font-size: 16px !important;
+    color: #888888 !important;
+    line-height: 1.5em !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.02em !important;
+    margin-bottom: 33px !important;
+}
+
+.footer-widgets {
+    background-color: #f8f8f8;
+    h2 {
+        padding: 0;
+    }
+}

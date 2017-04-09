@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+Preloader
+--------------------------------------------------------------*/
+
+#page-preloader {position: absolute;  left: 0; top:0; right: 0; bottom: 0; height: 100%; width: 100%; cursor: default;  pointer-events: none; text-align: center; vertical-align: middle; background-color: #FFF; z-index: 9999999}
+
+#page-preloader img { position: absolute; top: calc(50% - 48px); left: calc(50% - 42px); animation-name: rotationY; animation-duration: 750ms; animation-iteration-count: infinite; animation-timing-function: linear;}
+
+@-ms-keyframes rotationY {
+from {transform:rotateY(0deg);}
+to {transform:rotateY(180deg);}
+}
+@-moz-keyframes rotationY {
+from {transform:rotateY(0deg);}
+to {transform:rotateY(180deg);}
+}
+@-webkit-keyframes rotationY {
+from {transform:rotateY(0deg);}
+to {transform:rotateY(180deg);}
+}
+@keyframes rotationY {
+from {transform:rotateY(0deg);}
+to {transform:rotateY(180deg);}
+}
+

@@ -1,0 +1,133 @@
+body,
+button,
+input,
+select,
+textarea {
+    color: $color__text-main;
+    font-family: $font__main;
+    line-height: $font__line-height-body;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    font-family: $font__main;
+    //color: $color__main-dark;
+}
+
+body {
+    background: #fff;
+}
+
+a {
+    color: #888888;
+    font-weight: 500;
+    text-decoration: none;
+    @include main-transition;
+}
+
+a:hover,
+a:focus {
+    color: #443f3f;
+    text-decoration: none;
+    outline: 0;
+    @include main-transition;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-left {
+    margin: 0 33px 0 0 !important;
+    float: left;
+}
+
+.img-right {
+    margin: 0 0 0 33px !important;
+    float: right;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0 24px;
+    clear: both;
+}
+
+p {}
+
+blockquote,
+q {
+    quotes: "" "";
+    &:before,
+    &:after {
+        content: "";
+    }
+}
+
+hr {
+    background-color: $color__background-hr;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+figure {
+    margin: 1em 0;
+}

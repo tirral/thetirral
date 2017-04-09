@@ -1,0 +1,207 @@
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+
+.header-wrap {
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 116px;
+	background-color: rgba(255, 255, 255, .90);
+	@include main-transition;
+}
+
+.show {
+	opacity: 1;
+	z-index: 999;
+}
+
+
+.admin-bar .header-wrap {
+	&.show {
+		top: 32px;
+	}
+}
+
+
+h1.site-title {
+	line-height: 26px;
+	@media (max-width: 770px) {
+		text-align: center;
+	}
+	a {
+		text-align: left !important;
+		font-size: 22px;
+		line-height: 1.6;
+	}
+}
+
+.site-description {
+	font-size: 12px;
+	margin: 0;
+	line-height: 1.2;
+	word-spacing: 3px;
+	letter-spacing: 0px;
+	@media (max-width: 770px) {
+		text-align: center;
+	}
+}
+
+.site-logo {
+	max-height: 72px;
+}
+
+.site-header {
+	margin: 0 !important;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 10px 0;
+	@include main-transition;
+}
+
+.site-header {
+	border-bottom: 0 !important;
+	border-right: 0 !important;
+	border-left: 0 !important;
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+		border-bottom: 1px solid #cecece !important;
+		@include shadow-2;
+		@media screen and (max-width: 37.5em) {
+			position: relative;
+		}
+	}
+	.logo {
+		margin: 40px 0;
+		float: left;
+		@include main-transition;
+		a {
+			display: block;
+			height: 100%;
+		}
+		width: 135px;
+		height: 27px;
+	}
+	&.float-header {
+		padding: 8px;
+		#mainnav {
+			padding: 0;
+			> ul > li > a {
+				height: 70px;
+				line-height: 70px;
+			}
+		}
+		.logo {
+			margin: 20px 0;
+		}
+	}
+}
+
+.admin-bar .site-header {
+	top: 32px;
+	&.float-header {
+		top: 32px;
+	}
+}
+
+.header-image {
+	display: none;
+	position: relative;
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header-inner {
+	display: none;
+}
+
+.site-title {
+	margin: 0;
+}
+
+.telephone-wrapper {
+	ul {
+		margin: 0;
+  @media (max-width: 770px) {
+          padding: 0;
+  }
+  
+		li {
+			display: inline-block;
+			float: right;
+			list-style: none;
+			margin: 12px 0;
+			padding-right: 16px;
+			line-height: 20px;
+			border-right: 1px solid $color__main-gray;
+			@media (max-width: 770px) {
+				border-right: none;
+			}
+			&:first-child {
+				border-right: none;
+			}
+			@media (max-width: 770px) {
+				display: block;
+				width: 100%;
+				float: none;
+				text-align: center;
+			}
+		}
+	}
+	span.icon {
+		color: $color__main-theme;
+		padding-right: 12px;
+		font-size: 8px;
+	}
+	span {
+		color: $color__main-gray;
+		font-size: 13px;
+	}
+}
+
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+.container-fluid .jumbotron {
+	padding: 0 !important;
+}

@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+Slider
+--------------------------------------------------------------*/
+
+.carousel-caption {
+	top: -moz-calc(50% - 230px) !important;
+	top: calc(50% - 230px) !important;
+	top: -webkit-calc(50% - 230px)!important;
+	left: -moz-calc(50% - 230px)!important;
+	left: calc(50% - 230px) !important;
+	left: -webkit-calc(50% - 230px) !important;
+	padding-top: 200px;
+	width: 460px;
+	height: 460px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, .4);
+	h3 {
+		font-family: 'Lobster-Regular', cursive !important;
+		color: #fff;
+		font-size: 42px;
+		line-height: 46px;
+		margin-bottom: 12px;
+	}
+	p {
+		color: #fff;
+		font-size: 18px;
+		font-family: 'Lobster-Regular', cursive !important;
+		text-transform: lowercase;
+		text-align: right;
+		padding-right: 50px;
+	}
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+Jumbotron
+--------------------------------------------------------------*/
+.jumbotron {
+	border-radius: 0px !important;
+	}
