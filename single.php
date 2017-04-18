@@ -9,18 +9,12 @@
 
 get_header(); ?>
 
-
-
 <?php thetirral_jumbotron_template(); ?>
-
-<!--<p>----- НАЧАЛО страницы -- single.php -----</p>-->
-
 
 	<div id="primary" class="content-area col-md-9">
 		<main id="main" class="site-main" role="main">
 
-		<?php
-		while ( have_posts() ) : the_post();
+		<?php while ( have_posts() ) : the_post();
 
 			get_template_part( 'template-parts/single', get_post_format() );
 

@@ -8,13 +8,13 @@
  */
 ?>
 
-</div><!-- .row start in header.php -->
-	</div><!-- .container -->
-	</div><!-- #content -->
+        </div><!-- .row start in header.php -->
+    </div><!-- .container -->
+</div><!-- #content -->
 	
 <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
-		<?php get_sidebar('footer'); ?>
-	<?php endif; ?>		
+    <?php get_sidebar('footer'); ?>
+<?php endif; ?>		
 	
 <a class="go-top"><i class="fa fa-angle-up"></i></a>
 
@@ -27,12 +27,10 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', ' <span class="footer-info">thetirral</span>' ), '<span class="footer-info">thetirral</span>', '<a href="https://automattic.com/" rel="designer">Ruslan Prudnia</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
 </html>
-
-
-

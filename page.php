@@ -16,8 +16,6 @@ get_header(); ?>
 
 <?php thetirral_jumbotron_template(); ?>
 
-<!--<p>----- НАЧАЛО страницы -- page.php (Default Template) -----</p>-->
-
 	<div id="primary" class="content-area col-md-12">
 		<main id="main" class="site-main" role="main">
 
@@ -37,8 +35,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<!--<p>----- НАЧАЛО страницы -- page.php (Default Template) -----</p>-->
-
-<?php
-
-get_footer();
+<?php get_footer();

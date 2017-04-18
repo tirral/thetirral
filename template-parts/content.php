@@ -6,41 +6,23 @@
  *
  * @package thetirral
  */
-
 ?>
-
-
-<!--<p class="hint-level-two"> НАЧАЛО вывода контента СТАНДАРТНОГО ПОСТА, находится в файле == template-parts/content.php</p>-->
-
-
-
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     
-   <header class="entry-header text-center">
-       
+     <header class="entry-header text-center">
          <?php the_title( '<h1 class="entry-title"><a href="'. esc_url( get_permalink() ) .'" rel="bookmark">', '</a></h1>'); ?>
-		
-            <div class="entry-meta">
+	            <div class="entry-meta">
                 <?php echo thetirral_posted_meta(); ?> <!-- функция находится в файле inc/theme-suport.php -->
             </div>
-    </header>
-    
-    <div class="entry-content">
-    
-    <div class="entry-thumb">
-    
-    
-		<?php if( has_post_thumbnail() ): 
-			$featured_image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
-		?>
-		
+     </header>
+        <div class="entry-content">
+        <div class="entry-thumb">
+      		<?php if( has_post_thumbnail() ): 
+			$featured_image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) ); ?>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('thetirral-large-thumb'); ?></a>
-			
-	</div>		
-        
-			
-		<?php endif; ?>
+	    </div>		
+ 			<?php endif; ?>
                 <div class="entry-excerpt">
                     <?php the_excerpt(); ?>
                 </div>
@@ -56,19 +38,9 @@
 			) );
 		?>
     </div>
-    
     <!-- .entry-content -->
     <footer class="entry-footer">
         <?php echo thetirral_posted_footer(); ?> <!-- функция находится в файле inc/theme-suport.php -->
     </footer>
-    
-    
+      
 </article>
-
-
-<!--<p class="hint-level-two"> КОНЕЦ вывода контента СТАНДАРТНОГО ПОСТА, находится в файле == template-parts/content.php</p>-->
-
-
-
-
-

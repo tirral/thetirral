@@ -8,15 +8,11 @@
         return;
     }
 
-
     // This is your option name where all the Redux data is stored.
     $opt_name = "tirral_global";
 
     // This line is only for altering the demo. Can be easily removed.
     $opt_name = apply_filters( 'redux_demo/opt_name', $opt_name );
-
-
-
 
     /*
      *
@@ -57,8 +53,6 @@
         }
     }
 
-
-
     /*=== Dev mode disable ===*/
     function removeDemoModeLinkSell() { // Be sure to rename this function to something more unique
         if ( class_exists('ReduxFrameworkPlugin') ) {
@@ -69,9 +63,6 @@
         }
     }
     add_action('init', 'removeDemoModeLinkSell');
-
-
-
 
     /*=== Adding custom CSS for Theme Options design ===*/
     function addPanelCSS() {
@@ -87,22 +78,6 @@
 
     // This example assumes your opt_name is set to redux_demo, replace with your opt_name value
     add_action( 'init', 'addPanelCSS' );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /**
@@ -308,11 +283,9 @@
     $content = __( '<p>This is the sidebar content, HTML is allowed.</p>', 'thetirral' );
     Redux::setHelpSidebar( $opt_name, $content );
 
-
     /*
      * <--- END HELP TABS
      */
-
 
     /*
      *
@@ -321,9 +294,7 @@
      */
 
     /*
-
         As of Redux 3.5+, there is an extensive API. This API can be used in a mix/match mode allowing for
-
 
      */
 
@@ -573,18 +544,11 @@ Redux::setSection( $opt_name, array(
    ));
 
 
-
-
-
-
-
-
 /*
 	===================================
 	HEADER INFORMATION
 	===================================
 */
-
 
 /*---------------------------------------
 Subsection --  select header logo
@@ -619,11 +583,6 @@ Redux::setSection( $opt_name, array(
 
       )
    ));
-
-
-
-
-
 
 /*---------------------------------------
 Subsection --  select contact information
@@ -726,8 +685,6 @@ Redux::setSection( $opt_name, array(
    ));
 
 
-
-
 /*
 	===================================
 	HEADER SLIDER
@@ -741,7 +698,6 @@ Redux::setSection( $opt_name, array(
 	'customizer_width' => '400px',
 	'icon'             => 'el el-th-large'
 ) );
-
 
 
 /*-----------------------------------------------
@@ -877,14 +833,11 @@ Redux::setSection( $opt_name, array(
         )
     ) );
 
-
-
 /*
 	===================================
 	JAMBOTRON
 	===================================
 */
-
 Redux::setSection( $opt_name, array(
 	'title'            => __( 'Header Jumbotron', 'thetirral' ),
 	'id'               => 'jumbotron',
@@ -921,19 +874,11 @@ Redux::setSection( $opt_name, array(
         )
     ) );
 
-
-
-
-
-
-
-
 /*
 	===================================
 	Footer SETTINGS
 	===================================
 */
-
 Redux::setSection( $opt_name, array(
 	'title'            => __( 'Footer settings', 'thetirral' ),
 	'id'               => 'footer-settings',
@@ -965,7 +910,6 @@ Redux::setSection( $opt_name, array(
 ));
 
 
-
 /*
 	===================================
 	CSS Style
@@ -991,13 +935,6 @@ Redux::setSection( $opt_name, array(
      )
 ));
 
-
-
-
-
-
-
-
     if ( file_exists( dirname( __FILE__ ) . '/../README.md' ) ) {
         $section = array(
             'icon'   => 'el el-list-alt',
@@ -1014,7 +951,6 @@ Redux::setSection( $opt_name, array(
         );
         Redux::setSection( $opt_name, $section );
     }
-
 
     /*
      * <--- END SECTIONS

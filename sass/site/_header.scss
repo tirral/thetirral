@@ -26,7 +26,17 @@ Header
 }
 
 
-h1.site-title {
+ h1.archive-title {
+     color: #000000;
+     font-family: LibreFranklin-Thin, sans-serif !important;
+     font-size: 44px;
+     text-align: center;
+     line-height: 64px;
+ }
+
+
+h1.site-title
+{
 	line-height: 26px;
 	@media (max-width: 770px) {
 		text-align: center;

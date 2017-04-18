@@ -4,5 +4,3 @@
 		$spinner.fadeOut();
 		$preloader.delay(850).fadeOut('slow');
 	});
-
-

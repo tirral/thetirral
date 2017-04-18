@@ -306,3 +306,40 @@ a.comment-reply-link {
 .comment-respond {
 	margin-top: 60px;
 }
+
+
+
+
+
+
+
+/* 
+	404 Page
+	------------------------------------------------
+*/
+
+
+.not_found {
+    color: #000000;
+    font-family: LibreFranklin, sans-serif !important;
+    font-size: 96px;
+    text-align: center;
+    line-height: 64px;
+}
+
+.error404 .search-form input {
+    width: 100%;
+}
+
+.error404 .search-submit {
+    display: none;
+}
+
+.error404 h2.widgettitle,
+.error404 h2.widget-title {
+    color: #888888;
+    font-family: LibreFranklin-Thin, sans-serif;
+    font-size: 22px;
+    text-align: left;
+    line-height: 20px;
+}
